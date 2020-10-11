@@ -1,3 +1,4 @@
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -111,7 +112,8 @@ alias cgt='sudo cyberghostvpn --stop'
 
 alias cgusnet='sudo cyberghostvpn Netflix --country-code US --connect'
 alias cgex='sudo cyberghostvpn --traffic --country-code'
-# end of my aliases
+alias cgusny='sudo cyberghostvpn --traffic --country-code US --city "New York"'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
