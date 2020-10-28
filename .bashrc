@@ -113,6 +113,8 @@ alias cgt='sudo cyberghostvpn --stop'
 alias cgusnet='sudo cyberghostvpn Netflix --country-code US --connect'
 alias cgex='sudo cyberghostvpn --traffic --country-code'
 alias cgusny='sudo cyberghostvpn --traffic --country-code US --city "New York"'
+#alias for updating and upgrading packages :
+alias utd='sudo apt-get update && sudo apt-get upgrade -y'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -139,4 +141,6 @@ if ! shopt -oq posix; then
 fi
 
 # Created by `userpath` on 2020-09-27 18:09:05
-export PATH="$PATH:/home/wesselweernink/.local/bin"
+export PATH="$PATH:/home/wesselweernink/.local/bin:/home/di0/go/bin:/usr/local/bin"
+#added for coshare project, to use sql (to be further specified)
+export COSHARE_CONNECTION_URL=postgres://coshare:ssh4WETPAMcM@localhost/coshare

@@ -1,3 +1,4 @@
+set relativenumber
 set number
 call plug#begin('~/.vim/plugged')
 
@@ -8,3 +9,4 @@ Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
+set clipboard+=unnamedplus
