@@ -116,7 +116,7 @@ alias cgusny='sudo cyberghostvpn --traffic --country-code US --city "New York"'
 #alias for updating and upgrading packages :
 alias utd='sudo apt-get update && sudo apt-get upgrade -y'
 #alias for getting xkeysnail to run 
-alias xk='xhost +SI:localuser:root && xkeysnail ~/.config/xkeysnail/config.py'
+alias xk='xkeysnail -q ~/.config/xkeysnail/config.py &>/home/$USER/xkeysnailoutput & '
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

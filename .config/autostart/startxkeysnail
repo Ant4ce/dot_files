@@ -1,3 +1,3 @@
 #!/bin/env sh
-xhost +SI:localuser:root && xkeysnail ~/.config/xkeysnail/config.py
+xhost +SI:localuser:root && xkeysnail -q ~/.config/xkeysnail/config.py
 
