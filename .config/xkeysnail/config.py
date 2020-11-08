@@ -73,6 +73,7 @@ define_keymap(re.compile("firefox|discord|TelegramDesktop|Slack"), {
     K("C-u"): K("page_up"),
     K("C-d"): K("page_down"),
 }, "Discord, Slack, Signal, Riot, Jitsi Meet and Telegram")
+#works in all places 
 
 define_keymap(None, {
     # ctrl+m works as enter

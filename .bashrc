@@ -116,8 +116,9 @@ alias cgusny='sudo cyberghostvpn --traffic --country-code US --city "New York"'
 #alias for updating and upgrading packages :
 alias utd='sudo apt-get update && sudo apt-get upgrade -y'
 #alias for getting xkeysnail to run 
-alias xk='xkeysnail -q ~/.config/xkeysnail/config.py &>/home/$USER/xkeysnailoutput & '
-
+alias xk='xkeysnail -q ~/.config/xkeysnail/config.py &>/home/$USER/xkeysnailoutput & disown'
+#alias for nvim 
+alias v='nvim'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
