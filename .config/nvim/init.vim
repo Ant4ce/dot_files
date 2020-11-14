@@ -10,3 +10,4 @@ Plug 'vim-airline/vim-airline'
 
 call plug#end()
 set clipboard+=unnamedplus
+syntax on 
