@@ -79,12 +79,12 @@ define_keymap(None, {
     # ctrl+m works as enter
     K("C-m"): K("enter"),
     # ctrl+j works as newline
-    K("C-j"): K("Shift-enter"),
+    #K("C-j"): K("Shift-enter"),
     # ctrl+h works as backspace
-    K("C-h"): K("backspace"),
+    K("C-j"): K("backspace"),
 }, "Enable readline outside of applications that already have them")
 
-define_keymap(lambda wm_class: wm_class not in ("Gnome-terminal"), {
+define_keymap(lambda wm_class: wm_class not in ("Gnome-terminal|Firefox"), {
     # ctrl+w deletes a word
     K("C-w"): K("C-backspace"),
 }, "")
