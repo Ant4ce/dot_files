@@ -78,13 +78,11 @@ define_keymap(re.compile("firefox|discord|TelegramDesktop|Slack"), {
 define_keymap(None, {
     # ctrl+m works as enter
     K("C-m"): K("enter"),
-    # ctrl+j works as newline
-    #K("C-j"): K("Shift-enter"),
     # ctrl+h works as backspace
-    K("C-j"): K("backspace"),
+    K("C-h"): K("backspace"),
 }, "Enable readline outside of applications that already have them")
 
-define_keymap(lambda wm_class: wm_class not in ("Gnome-terminal|Firefox"), {
-    # ctrl+w deletes a word
-    K("C-w"): K("C-backspace"),
+define_keymap(lambda wm_class: wm_class not in ("Gnome-terminal"), {
+    # ctrl+j deletes a word
+    K("C-j"): K("C-backspace"),
 }, "")
