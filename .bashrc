@@ -105,6 +105,9 @@ alias cgch='sudo cyberghostvpn --traffic --country-code CH --connect'
 alias cgde='sudo cyberghostvpn --traffic --country-code DE --connect'
 alias cgus='sudo cyberghostvpn --traffic --country-code US --connect'
 alias cgjp='sudo cyberghostvpn --traffic --country-code JP --connect'
+alias cggb='sudo cyberghostvpn --traffic --country-code GB --connect'
+alias cgfr='sudo cyberghostvpn --traffic --country-code FR --connect'
+alias cgit='sudo cyberghostvpn --traffic --country-code IT --connect'
 
 alias cgs='cyberghostvpn --status'
 alias cg='sudo cyberghostvpn --traffic --country-code'
@@ -119,6 +122,8 @@ alias utd='sudo apt-get update && sudo apt-get upgrade -y'
 alias xk='xkeysnail -q ~/.config/xkeysnail/config.py &>/home/$USER/xkeysnailoutput & disown'
 #alias for nvim 
 alias v='nvim'
+#alias for py
+alias py='python3'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'

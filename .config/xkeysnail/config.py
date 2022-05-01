@@ -59,10 +59,10 @@ define_keymap(None, {
     K("right"): K("UNKNOWN"),
 
     # disable enter
-    K("enter"): K("UNKNOWN"),
+    #K("enter"): K("UNKNOWN"),
 
     # disable backspace
-    K("backspace"): K("UNKNOWN"),
+    #K("backspace"): K("UNKNOWN"),
 
 }, "hjkl arrow keys")
 

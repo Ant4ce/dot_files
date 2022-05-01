@@ -15,7 +15,6 @@ set clipboard+=unnamedplus
 syntax on 
 set autoread
 set termguicolors
-colorscheme codedark
 let g:airline_theme = 'codedark'
 set expandtab
 set tabstop=4
