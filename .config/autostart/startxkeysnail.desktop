@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/wesselweernink/.config/autostart/startxkeysnail
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=xkeysnail
+Name=xkeysnail
+Comment[en_US]=starts xkeysnail for keyboard
+Comment=starts xkeysnail for keyboard

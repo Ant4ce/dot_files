@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/wesselweernink/.config/autostart/startcyberghost
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=cyberghoststart
+Name=cyberghoststart
+Comment[en_US]=starts cyberghost on boot
+Comment=starts cyberghost on boot
