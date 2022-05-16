@@ -53,10 +53,10 @@ define_keymap(None, {
     K("C-Shift-LM-RM-l"): K("C-Shift-LM-right"),
 
     # disable arrow keys for evarrr
-    K("left"):  K("UNKNOWN"),
-    K("down"):  K("UNKNOWN"),
-    K("up"):    K("UNKNOWN"),
-    K("right"): K("UNKNOWN"),
+    #K("left"):  K("UNKNOWN"),
+    #K("down"):  K("UNKNOWN"),
+    #K("up"):    K("UNKNOWN"),
+    #K("right"): K("UNKNOWN"),
 
     # disable enter
     #K("enter"): K("UNKNOWN"),
