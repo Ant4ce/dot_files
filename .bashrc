@@ -149,22 +149,5 @@ if ! shopt -oq posix; then
 fi
 
 # Created by `userpath` on 2020-09-27 18:09:05
-export PATH="$PATH:/home/wesselweernink/.local/bin:/home/di0/go/bin:/usr/local/bin"
-#added for coshare project, to use sql (to be further specified)
-export COSHARE_CONNECTION_URL=postgres://coshare:ssh4WETPAMcM@localhost/coshare
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/di0/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/di0/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/di0/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/di0/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+export PATH="$PATH:/home/wesselweernink/.local/bin:/home/di0/go/bin:/usr/local/bin:$HOME/.local/bin"
 
