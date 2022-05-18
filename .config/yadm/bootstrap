@@ -4,7 +4,7 @@ apt-get update
 echo "installing python and pip"
 apt-get install python3
 apt-get install python3-pip
-echo "finished installing python and pip
+echo "finished installing python and pip"
 
 echo "installing neovim"
 apt-get install neovim
@@ -20,5 +20,7 @@ echo "installed xkeysnail"
 echo "setting sudo permissions for xkeysnail"
 sudo groupadd -f uinput
 sudo gpasswd -a $USER uinput
+echo "giving xkeysnail permission"
 cat <<EOF | sudo tee /etc/udev/rules.d/70-xkeysnail.rules KERNEL=="uinput", GROUP="uinput", MODE="0660", OPTIONS+="static_node=uinput" KERNEL=="event[0-9]*", GROUP="uinput", MODE="0660" EOF
+
 echo "finished setting sudo permissions for xkeysnail"
