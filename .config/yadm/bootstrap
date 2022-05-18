@@ -18,8 +18,8 @@ echo "installing xkeysnail"
 pip3 install xkeysnail
 echo "installed xkeysnail"
 echo "setting sudo permissions for xkeysnail"
-sudo groupadd -f uinput
-sudo gpasswd -a $USER uinput
+groupadd -f uinput
+gpasswd -a $USER uinput
 echo "giving xkeysnail permission"
 cat <<EOF | sudo tee /etc/udev/rules.d/70-xkeysnail.rules
 KERNEL=="uinput", GROUP="uinput", MODE="0660", OPTIONS+="static_node=uinput"
