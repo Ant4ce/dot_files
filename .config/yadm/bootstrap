@@ -2,7 +2,7 @@
 apt-get update
 
 echo "installing regular packages (python pip neovim)"
-apt-get install python3 python3-pip neovim -y
+apt-get install python3 python3-pip neovim curl -y
 echo "finished installing packages"
 
 echo "installing junegunn plugin manager"
