@@ -1,14 +1,10 @@
 #!/bin/sh
 apt-get update
 
-echo "installing python and pip"
-apt-get install python3
-apt-get install python3-pip
-echo "finished installing python and pip"
+echo "installing regular packages (python pip neovim)"
+apt-get install python3 python3-pip neovim -y
+echo "finished installing packages"
 
-echo "installing neovim"
-apt-get install neovim
-echo "installed neovim"
 echo "installing junegunn plugin manager"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -16,8 +12,8 @@ echo "installed junegunn plugin manager"
 
 echo "installing xkeysnail"
 pip3 install xkeysnail
-echo "installed xkeysnail"
-echo "setting sudo permissions for xkeysnail"
+echo "xkeysnail installed"
+echo "setting/giving sudo permissions for xkeysnail"
 groupadd -f uinput
 gpasswd -a $USER uinput
 echo "giving xkeysnail permission"
