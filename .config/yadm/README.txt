@@ -18,4 +18,5 @@ the respective files.
 
 In case running the bootstrap file causes the .basrc and .profile files not to be swapped with the new files. Make sure to run:
 yadm checkout -- <filename>
-On each of the files. This will make the repo abandon the local versions of the file in favour of HEAD, which is the ones with all my customization.
+On each of the files. Then pull. This will make the repo abandon the local versions of the file in favour of HEAD, which is the ones with all my customization.
+
