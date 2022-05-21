@@ -16,3 +16,6 @@ This will give sudo permissions to the cyberghostvpn executable.
 For more notes on the function of the different files and their contents see the comments inside
 the respective files.
 
+In case running the bootstrap file causes the .basrc and .profile files not to be swapped with the new files. Make sure to run:
+yadm checkout -- <filename>
+On each of the files. This will make the repo abandon the local versions of the file in favour of HEAD, which is the ones with all my customization.
