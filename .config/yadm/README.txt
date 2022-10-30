@@ -1,6 +1,8 @@
 This file is to explain the bootstrap file and how to use it. 
 It also covers how to install sudo permissions for the cyberghost vpn.
 
+MAKE SURE that you run the yadm clone --bootstrap <URL> with SUDO PERMISSION otherwise you will have to manually run the commands in the bootstrap file each with SUDO. Yes, this would make it the 2nd time I made this mistake. SO use SUDO.
+
 the bootstrap file is dedected when cloning a yadm (git) repo. Say 'yes' to 
 using the bootstrap file if you want to make yadm install some packages and give 
 sudo permissions to xkeysnails to setup the custom keyboard layout. This will also
